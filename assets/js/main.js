@@ -77,7 +77,7 @@ $(document).ready(function () {
   }
 
   // Tự động chạy
-  let timer = setInterval(nextImage, 4000);
+  let timer = setInterval(nextImage, 3000);
 
   function nextImage() {
     const next = (current + 1) % total;
@@ -93,13 +93,13 @@ $(document).ready(function () {
   $container.on("click", ".next-btn", function () {
     clearInterval(timer);
     nextImage();
-    timer = setInterval(nextImage, 4000);
+    timer = setInterval(nextImage, 3000);
   });
 
   $container.on("click", ".prev-btn", function () {
     clearInterval(timer);
     prevImage();
-    timer = setInterval(nextImage, 4000);
+    timer = setInterval(nextImage, 3000);
   });
 
   // Chuyển ảnh khi click dot
@@ -107,6 +107,6 @@ $(document).ready(function () {
     clearInterval(timer);
     const index = $(this).data("index");
     showImage(index);
-    timer = setInterval(nextImage, 4000);
+    timer = setInterval(nextImage, 3000);
   });
 });

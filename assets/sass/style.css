@@ -8380,3 +8380,26 @@ html {
   opacity: 1;
   background: #007bff;
 }
+
+#playlist {
+    background: linear-gradient(180deg, #fff, #f9f9f9);
+  }
+
+  #playlist .card {
+    border-radius: 20px;
+    background-color: #ffffff;
+  }
+
+  #playlist h2 {
+    font-family: "Playfair Display", serif;
+    color: #333;
+  }
+
+  #playlist audio::-webkit-media-controls-panel {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+  }
+
+  #playlist audio {
+    outline: none;
+  }
